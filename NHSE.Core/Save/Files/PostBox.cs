@@ -55,6 +55,11 @@ public sealed class PostBox : EncryptedFilePair
 
     #region Mail
 
+    public void Clear()
+    {
+        MailListWholeRegion.Clear();
+    }
+
     public void WipeTxRxSection(int index)
     {
         var arr = new byte[0x60];

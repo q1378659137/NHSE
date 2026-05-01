@@ -39,6 +39,7 @@
             Menu_LoadDecrypted = new System.Windows.Forms.ToolStripMenuItem();
             Menu_RAMEdit = new System.Windows.Forms.ToolStripMenuItem();
             Menu_ItemImages = new System.Windows.Forms.ToolStripMenuItem();
+            Menu_DreamCopy = new System.Windows.Forms.ToolStripMenuItem();
             Menu_Options = new System.Windows.Forms.ToolStripMenuItem();
             Menu_Language = new System.Windows.Forms.ToolStripComboBox();
             Menu_Theme = new System.Windows.Forms.ToolStripMenuItem();
@@ -163,7 +164,7 @@
             // 
             // Menu_Tools
             // 
-            Menu_Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { Menu_DumpDecrypted, Menu_VerifyHashes, Menu_LoadDecrypted, Menu_RAMEdit, Menu_ItemImages });
+            Menu_Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { Menu_DumpDecrypted, Menu_VerifyHashes, Menu_LoadDecrypted, Menu_RAMEdit, Menu_ItemImages, Menu_DreamCopy });
             Menu_Tools.Name = "Menu_Tools";
             Menu_Tools.Size = new System.Drawing.Size(47, 20);
             Menu_Tools.Text = "Tools";
@@ -206,6 +207,10 @@
             Menu_ItemImages.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M;
             Menu_ItemImages.Size = new System.Drawing.Size(206, 22);
             Menu_ItemImages.Text = "Item Images";
+            Menu_DreamCopy.Name = "Menu_DreamCopy";
+            Menu_DreamCopy.Size = new System.Drawing.Size(180, 22);
+            Menu_DreamCopy.Text = "梦境复刻";
+            Menu_DreamCopy.Click += Menu_DreamCopy_Click;
             Menu_ItemImages.Click += Menu_ItemImages_Click;
             // 
             // Menu_Options
@@ -1062,6 +1067,7 @@
         private System.Windows.Forms.Label L_WeatherSeed;
         private System.Windows.Forms.NumericUpDown NUD_WeatherSeed;
         private System.Windows.Forms.ToolStripMenuItem Menu_ItemImages;
+        private System.Windows.Forms.ToolStripMenuItem Menu_DreamCopy;
         private System.Windows.Forms.Label L_Poki;
         private System.Windows.Forms.NumericUpDown NUD_Poki;
         private System.Windows.Forms.Label L_HotelTickets;
@@ -1079,4 +1085,5 @@
         private System.Windows.Forms.Label L_Tour_WeatherSeed;
     }
 }
+
 

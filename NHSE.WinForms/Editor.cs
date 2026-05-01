@@ -163,6 +163,12 @@ public sealed partial class Editor : Form
         imgfetcher.Show(this);
     }
 
+
+    private void Menu_DreamCopy_Click(object sender, EventArgs e)
+    {
+        using var editor = new DreamEditor(SAV);
+        editor.ShowDialog();
+    }
     private void Menu_Theme_System_Click(object sender, EventArgs e)
     {
         Menu_Options.DropDown.Close();
